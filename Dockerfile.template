@@ -1,0 +1,10 @@
+FROM {{baseimage}}:{{tag}}
+
+RUN pip install paho-mqtt broadlink
+
+RUN git clone https://github.com/eschava/broadlink-mqtt.git
+
+# The node Dockerfile sets the entrypoint to "node". We need this to be bash in order to use pimatic.
+ENTRYPOINT ["/bin/bash"]
+
+#docker run -i -t -v D:/Documents/docker-raspberry-python-broadlink/mqtt.conf:/broadlink-mqtt/mqtt.conf -v D:/Documents/docker-raspberry-python-broadlink/commands:/broadlink-mqtt/commands joshendriks/raspberry-pi2-broadlink-mqtt:1.0.0

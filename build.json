@@ -1,0 +1,35 @@
+{  
+   "maintainer":"joshendriks",
+   "images":[
+      {  
+         "image":"raspberry-pi-broadlink-mqtt",
+         "baseimage":"resin/raspberry-pi-python",
+         "tags":[ 
+            {  
+              "source":"2.7",
+              "target":"1.0.0"
+			}
+         ]
+      },
+	  {  
+         "image":"raspberry-pi2-broadlink-mqtt",
+         "baseimage":"resin/raspberry-pi2-python",
+         "tags":[ 
+            {  
+              "source":"2.7",
+              "target":"1.0.0"
+			}
+         ]
+      },
+	  {  
+         "image":"raspberry-pi3-broadlink-mqtt",
+         "baseimage":"resin/raspberry-pi3-python",
+         "tags":[ 
+            {  
+              "source":"2.7",
+              "target":"1.0.0"
+			}
+         ]
+      }
+   ]
+}
